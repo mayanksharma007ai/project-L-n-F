@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found - Chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Lost & Found</h1>
+            </div>
+            <!-- Login/Signup Buttons -->
+            <div class="auth-buttons">
+                <button class="btn btn-outline"><a style="text-decoration: none;" href="login.html">Login</a></button>
+                <button class="btn btn-primary"><a style="text-decoration: none;" href="signup.html">Sign Up</a></button>
+            </div>
+            <!-- User Profile (shown when logged in) -->
+            <div class="user-profile" style="display: none;">
+                <div class="user-info">
+                    <div class="avatar-container">
+                        <img src="https://via.placeholder.com/40x40?text=U" alt="User" class="user-avatar">
+                        <div class="avatar-overlay"></div>
+                    </div>
+                    <span class="user-name">User</span>
+                </div>
+                <div class="user-menu">
+                    <button class="btn btn-small" onclick="window.location.href='Home.html'">Back to Home</button>
+                    <button class="btn btn-small" onclick="auth.logout()">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h4 class="nav-title">LF Portal</h4>
+            <div class="nav-links">
+                <a href="Home.html" class="nav-link">Home</a>
+                <a href="ContactUs.html" class="nav-link">Contact Us</a>
+                <a href="chat.html" class="nav-link active">Chats</a>
+                <a href="aboutus.html" class="nav-link">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Chat Under Construction Section -->
+            <div class="construction-container">
+                <div class="construction-icon">
+                    <div class="gear gear-1"></div>
+                    <div class="gear gear-2"></div>
+                    <div class="gear gear-3"></div>
+                </div>
+                
+                <div class="construction-content">
+                    <h1 class="construction-title">Chat Feature</h1>
+                    <h2 class="construction-subtitle">Currently Under Development</h2>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <p class="progress-text">75% Complete</p>
+                    
+                    <div class="feature-preview">
+                        <div class="chat-mockup">
+                            <div class="chat-header">
+                                <div class="chat-user">
+                                    <div class="chat-avatar"></div>
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="chat-status">Online</div>
+                            </div>
+                            <div class="chat-messages">
+                                <div class="message received">
+                                    <p>Hi! I found your lost wallet near the library</p>
+                                    <span class="message-time">2:30 PM</span>
+                                </div>
+                                <div class="message sent">
+                                    <p>Really? Thank you so much! Where can we meet?</p>
+                                    <span class="message-time">2:32 PM</span>
+                                </div>
+                                <div class="message received typing">
+                                    <div class="typing-indicator">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="upcoming-features">
+                        <h3>Coming Soon:</h3>
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <span class="feature-icon">💬</span>
+                                Real-time messaging
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">🔔</span>
+                                Push notifications
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">📱</span>
+                                Mobile-friendly chat
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">🔒</span>
+                                Secure conversations
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cta-section">
+                        <p class="update-text">We're working hard to bring you the best chat experience!</p>
+                        <button class="btn btn-primary notify-btn" onclick="requestNotification()">
+                            Notify Me When Ready
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Floating particles for visual effect -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
